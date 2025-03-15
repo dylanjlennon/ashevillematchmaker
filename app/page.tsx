@@ -5,6 +5,12 @@ import Link from 'next/link'
 import Script from 'next/script'
 import neighborhoods from '@/lib/neighborhood-data'
 
+
+export default function Home() {
+  useEffect(() => {
+    console.log("Google Maps script loaded");
+  }, []);
+  
 export default function Home() {
   return (
     <main>
@@ -172,9 +178,10 @@ export default function ComparePage() {
   return (
     <>
       <Script
-        src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places`}
-        onLoad={handleMapLoad}
-      />
+  src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places`}
+  strategy="afterInteractive"
+  onLoad={() => console.log("Google Maps script loaded")}
+/>
       
       <div className="max-w-6xl mx-auto p-6 bg-white text-gray-800">
         <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">Compare Neighborhoods</h1>
