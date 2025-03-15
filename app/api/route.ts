@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { D1Database } from '@cloudflare/workers-types';
-import { getNeighborhoods } from '@/lib/db';
+import { getNeighborhoods } from '../../lib/db';
 
 interface Env {
   DB: D1Database;
