@@ -5,6 +5,14 @@ import Link from 'next/link'
 import Script from 'next/script'
 import neighborhoods from '@/lib/neighborhood-data'
 
+export default function Home() {
+  return (
+    <main>
+      <h1>Welcome to the Asheville Neighborhood Matchmaker</h1>
+    </main>
+  );
+}
+
 export default function ComparePage() {
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState([])
   const [availableNeighborhoods, setAvailableNeighborhoods] = useState([])
