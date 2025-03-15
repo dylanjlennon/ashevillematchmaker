@@ -1,21 +1,29 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import Script from 'next/script'
 import neighborhoods from '@/lib/neighborhood-data'
 
+import { useEffect } from "react";
+import Script from "next/script";
 
 export default function Home() {
   useEffect(() => {
     console.log("Google Maps script loaded");
   }, []);
-  
-export default function Home() {
+
   return (
-    <main>
-      <h1>Welcome to the Asheville Neighborhood Matchmaker</h1>
-    </main>
+    <>
+      <Script
+        src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places`}
+        strategy="afterInteractive"
+        onLoad={() => console.log("Google Maps script loaded")}
+      />
+
+      <main>
+        <h1>Welcome to the Asheville Neighborhood Matchmaker</h1>
+      </main>
+    </>
   );
 }
 
