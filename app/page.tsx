@@ -1,13 +1,15 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Link from 'next/link'
-import neighborhoods from '@/lib/neighborhood-data'
-
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Script from "next/script";
+import neighborhoods from "@/lib/neighborhood-data";
 
-export default function Home() {
+export default function ComparePage() {
+  const [selectedNeighborhoods, setSelectedNeighborhoods] = useState([]);
+  const [availableNeighborhoods, setAvailableNeighborhoods] = useState([]);
+  const [mapLoaded, setMapLoaded] = useState(false);
+
   useEffect(() => {
     console.log("Google Maps script loaded");
   }, []);
