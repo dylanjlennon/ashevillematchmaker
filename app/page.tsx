@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Script from "next/script";
-import neighborhoods from "@/lib/neighborhood-data";
+import neighborhoods from "../lib/neighborhood-data";
 
 export default function ComparePage() {
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState([]);
