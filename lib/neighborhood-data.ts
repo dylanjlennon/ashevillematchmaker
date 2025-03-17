@@ -280,28 +280,28 @@ const neighborhoods: Neighborhood[] = [
     ],
     local_perspective: "Biltmore Village has such a unique charm with its Tudor-style architecture and brick sidewalks. It feels like a small European village right in Asheville. I love being able to walk to great restaurants and shops, and the Biltmore Estate is practically in my backyard. The area has a peaceful, upscale atmosphere while still being convenient to everything.",
     nearby_attractions: [
-      "Biltmore Estate entrance",
+      "Biltmore Estate",
       "All Souls Cathedral",
-      "New Morning Gallery",
-      "Biltmore Village shops",
-      "French Broad River Park"
+      "McCormick Field",
+      "Biltmore Village Shops",
+      "French Broad River"
     ],
     map_coordinates: {
-      lat: 35.5694,
-      lng: -82.5432
+      lat: 35.5716,
+      lng: -82.5453
     }
   },
   {
     id: 6,
     name: "North Asheville",
     area: "North",
-    description: "An established area with tree-lined streets, historic homes, and beautiful parks. North Asheville offers a blend of suburban tranquility and urban convenience with easy access to downtown.",
+    description: "An established area with tree-lined streets, historic homes, and beautiful parks. North Asheville offers a mix of quiet residential areas and vibrant commercial corridors.",
     location_description: "North of downtown, including areas around UNC Asheville and Beaver Lake.",
-    housing_types: "Colonial Homes, Tudor Revivals, Ranches, New Construction",
+    housing_types: "Single-Family Homes, Historic Estates, Mid-Century Modern, Some Condos",
     price_range: "High to Very High",
     median_price: "$650,000",
     distance_to_airport: "20 minutes",
-    walkability: 5,
+    walkability: 6,
     amenities: {
       dining_options: 7,
       shopping: 6,
@@ -313,20 +313,20 @@ const neighborhoods: Neighborhood[] = [
       nightlife: 4
     },
     characteristics: {
-      urban_suburban_scale: 4,
+      urban_suburban_scale: 5,
       historic_modern_scale: 7,
-      quiet_lively_scale: 3,
-      family_friendly: 8,
+      quiet_lively_scale: 4,
+      family_friendly: 9,
       artistic_vibe: 6,
-      trendy_traditional_scale: 3
+      trendy_traditional_scale: 5
     },
     image: "/images/north_asheville.jpg",
     highlights: [
-      "Prestigious neighborhoods with architectural variety",
-      "Beaver Lake nature preserve",
+      "Beautiful established neighborhoods",
+      "Beaver Lake and nature preserve",
       "UNC Asheville campus",
       "Botanical Gardens at Asheville",
-      "Convenient shopping centers"
+      "Country Club of Asheville"
     ],
     local_perspective: "North Asheville offers the perfect balance of peaceful residential living with proximity to downtown. I love the established neighborhoods with mature trees and the sense of community. The Beaver Lake area is perfect for morning walks, and there are excellent local restaurants and coffee shops scattered throughout the area. It's a wonderful place to enjoy Asheville's natural beauty while still being close to urban amenities.",
     nearby_attractions: [
@@ -345,38 +345,38 @@ const neighborhoods: Neighborhood[] = [
     id: 7,
     name: "Kenilworth",
     area: "East",
-    description: "A historic neighborhood with winding streets, diverse architecture, and a convenient location. Kenilworth offers a peaceful residential atmosphere while being minutes from downtown.",
-    location_description: "Southeast of downtown, adjacent to Biltmore Village.",
-    housing_types: "Tudor Homes, Craftsman Bungalows, Mid-Century Ranches",
+    description: "A historic neighborhood with winding streets, diverse architecture, and a strong sense of community. Kenilworth offers a peaceful setting with convenient access to downtown and Mission Hospital.",
+    location_description: "Southeast of downtown, east of Biltmore Village.",
+    housing_types: "Tudor, Colonial, Craftsman, and Contemporary Homes",
     price_range: "Medium-High to High",
-    median_price: "$500,000",
+    median_price: "$525,000",
     distance_to_airport: "15 minutes",
-    walkability: 4,
+    walkability: 5,
     amenities: {
-      dining_options: 5,
-      shopping: 4,
+      dining_options: 4,
+      shopping: 3,
       breweries_bars: 3,
       coffee_shops: 4,
       wellness_facilities: 6,
       parks_green_spaces: 7,
       arts_culture: 5,
-      nightlife: 2
+      nightlife: 3
     },
     characteristics: {
       urban_suburban_scale: 4,
       historic_modern_scale: 8,
       quiet_lively_scale: 3,
-      family_friendly: 7,
+      family_friendly: 8,
       artistic_vibe: 6,
-      trendy_traditional_scale: 3
+      trendy_traditional_scale: 4
     },
     image: "/images/kenilworth.jpg",
     highlights: [
-      "Historic homes with unique architectural styles",
-      "Kenilworth Lake and Park",
-      "Quiet, winding streets",
+      "Historic homes with character",
+      "Kenilworth Park and Lake",
       "Proximity to Mission Hospital",
-      "Easy access to downtown and Biltmore Village"
+      "Quiet, winding streets",
+      "Strong neighborhood association"
     ],
     local_perspective: "Kenilworth is one of Asheville's hidden gems with its winding roads and eclectic mix of homes. I love the peaceful atmosphere and the way the neighborhood feels tucked away, yet it's just minutes from downtown. The Kenilworth Park is a great spot for recreation, and the community has a strong sense of identity and history.",
     nearby_attractions: [
@@ -387,24 +387,24 @@ const neighborhoods: Neighborhood[] = [
       "Biltmore Village"
     ],
     map_coordinates: {
-      lat: 35.5684,
-      lng: -82.5326
+      lat: 35.5729,
+      lng: -82.5319
     }
   },
   {
     id: 8,
     name: "Biltmore Park",
     area: "South",
-    description: "A modern planned community featuring a town square with shopping, dining, entertainment, and various housing options. Biltmore Park offers a contemporary mixed-use environment.",
+    description: "A planned community with a town square design featuring shopping, dining, offices, and residential areas. Biltmore Park offers a walkable, mixed-use environment with modern amenities.",
     location_description: "South Asheville, near I-26 and Long Shoals Road.",
-    housing_types: "Townhomes, Condos, Single-Family Homes, Luxury Apartments",
+    housing_types: "Condos, Townhomes, Single-Family Homes, Luxury Apartments",
     price_range: "Medium-High to High",
-    median_price: "$525,000",
+    median_price: "$550,000",
     distance_to_airport: "10 minutes",
     walkability: 7,
     amenities: {
       dining_options: 8,
-      shopping: 9,
+      shopping: 8,
       breweries_bars: 6,
       coffee_shops: 7,
       wellness_facilities: 9,
@@ -423,9 +423,11 @@ const neighborhoods: Neighborhood[] = [
     image: "/images/biltmore_park.jpg",
     highlights: [
       "Town Square with shops and restaurants",
+      "Modern planned community",
+      "Regal movie theater",
       "YMCA and fitness options",
       "Movie theater and entertainment",
       "Modern housing options",
       "Convenient to airport and major highways"
     ],
-    local_perspective: "Biltmore Park gives you that 'live, work, play' lif<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
+    local_perspective: "Biltmore Park gives you that 'live, work, p<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
